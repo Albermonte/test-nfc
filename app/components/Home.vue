@@ -33,6 +33,22 @@
             this.nfc.enabled().then(on => {
                 console.log(on ? "Yes" : "No");
             });
+            this.nfc.pushMessage({
+                textRecords: [
+                {
+                    id: [1],
+                    text: "Hello Paolo"
+                }
+            ]
+            }).then(function() {
+                console.log("Wrote text records 'Hello' and 'Goodbye'");
+            }, function(err) {
+                alert(err);
+            }); 
+
+
+
+            /*
 
             this.nfc.setOnNdefDiscoveredListener(
                     data => {
@@ -61,6 +77,8 @@
                 .then(function() {
                     console.log("OnTagDiscovered listener added");
                 });
+
+                */
                 
         }
         
