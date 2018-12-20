@@ -14,7 +14,7 @@
     }
   },
   "dependencies": {
-    "nativescript-nfc": "^3.0.0",
+    "nativescript-nfc": "^3.0.1",
     "nativescript-vue": "^2.0.0",
     "tns-core-modules": "^5.0.2"
   },
