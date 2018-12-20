@@ -18,7 +18,7 @@ module.exports = env => {
     const appComponents = [
         "tns-core-modules/ui/frame",
         "tns-core-modules/ui/frame/activity",
-        resolve(__dirname, "node_modules/nativescript-nfc/nfc-activity.android.d.ts")
+        resolve(__dirname, "node_modules/nativescript-nfc/nfc-activity.android.js")
     ];
 
     const platform = env && (env.android && "android" || env.ios && "ios");
